@@ -1,0 +1,127 @@
+.header {
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background-color: var(--common-white);
+    border-bottom: 1px solid var(--header-border);  
+} 
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+/* ====================================================LOGO=================================================================== */
+
+.logo {
+    font-family:var(--logo-font);
+    font-weight: var(--bold);
+    text-decoration: none;
+    font-size: var(--title-size);
+    line-height: 1.19;
+    letter-spacing: 0.03em; 
+}
+
+.logo-header {
+    margin-right: 93px;
+}
+
+
+.logo__web {
+    color: var(--accent-color);
+}
+
+.logo__studio {
+    color: var(--logo-color);
+}
+
+/* ==================================================NAVIGATION=================================================================== */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    .list {
+    display: flex;
+}
+.item {
+    position: relative;
+    &:not(:last-child) {
+    margin-right: 50px;
+}
+}
+.link {
+    font-family: var(--main-font);
+    font-weight: var(--medium);
+    font-size: var(--primary-text-size);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
+}
+}
+
+
+/* =====================================================CURRENT================================================================ */
+
+.current__studio::after,
+.current__portfolio::after {
+    justify-content: center;
+    position:absolute;
+    content: '';
+    display:block;
+    top: 44px;
+    left:-2px;
+    height: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px var(--shadow-color);
+    border-radius: 2px;
+} 
+
+.current__studio::after {
+    width: 48px;
+}
+
+.current__portfolio::after {
+    width: 78px;
+}
+
+/* =====================================================COORD================================================================ */
+
+.contact-list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+    .item:not(:last-child) {
+    margin-right: 50px;
+}
+.link {
+    display: flex;
+    align-items: center;
+    font-family: var(--main-font);
+    font-weight: var(--medium);
+    font-size: var(--primary-text-size);
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:var(--secondary-color);
+    fill: currentColor;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
+}
+.mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+.phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+}
+}
