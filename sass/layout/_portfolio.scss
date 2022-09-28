@@ -18,28 +18,33 @@
     letter-spacing: 0.03em;
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+}
 
-    &:hover,
-&:focus {
+.btn:hover,
+.btn:focus {
     background-color: var(--accent-color);
     color: var(--common-white);
     box-shadow: 0px 4px 4px var(--shadow-color);
 }
-.list {
+
+.btn {
+    padding: 6px 22px;
+}
+
+.btn:first-child {
+    padding: 6px 25px;
+}
+
+
+.btn-list {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
-.item:not(:last-child) {
-    margin-right: 8px;
-}
-&:first-child {
-    padding: 6px 25px;
-}
-}
 
-.btn {
-    padding: 6px 22px;
+
+.btn-item:not(:last-child) {
+    margin-right: 8px;
 }
 
 

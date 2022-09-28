@@ -1,11 +1,13 @@
 .trait__title {
-    display: none;
+    /* display: none; */
     text-align: center;
 }
 
 .trait-list {
     display:flex;
-    .item {
+}
+
+.trait-list__item {
     margin-right: 30px;
     color: var(--secondary-color);
     font-family: var(--main-font);
@@ -13,11 +15,13 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     width: 270px;
-    &:last-child {
+}
+
+.trait-list__item:last-child {
     margin-right: 0px;
 }
-}
-.title {
+
+.trait-list__title {
     margin-bottom: 10px;
     color: var(--primary-color);
     font-family: var(--main-font);
@@ -28,7 +32,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-}
 
 
 .icon-div {
@@ -38,10 +41,13 @@
     background-color: var(--back-color);
     margin-bottom: 30px;
     border-radius: 4px;
-    .item {
+
+
+}
+
+.icon-div__item {
     display: block;
     width: 70px;
     height: 70px;
     
-}
 }

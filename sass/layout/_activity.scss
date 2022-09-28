@@ -1,6 +1,8 @@
 .activity {
     padding-top: 0;
-    .title {
+}
+
+.activity__title {
     margin-bottom: 50px;
     font-family: var(--main-font);
     font-style: normal;
@@ -11,19 +13,21 @@
     color:var(--primary-color);
     letter-spacing: 0.03em;
 }
-}
 
 .activity-list {
     display: flex;
     background-color: var(--common-white);
-    .item {
+}
+
+.activity-list__item {
     position: relative;
 }
-.item:not(:last-child) {
-    margin-right: 30px;
 
+.activity-list__item:not(:last-child) {
+    margin-right: 30px;
 }
-.paragraph {
+
+.activity-list__paragraph {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -37,5 +41,4 @@
     display: flex;
     align-items: center;
     justify-content: center;
-}
 }
